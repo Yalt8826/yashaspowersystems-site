@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site.config';
+---
+
+<Base title={SITE.name} description={SITE.tagline}>
+  <h1>{SITE.name}</h1>
+
+  <p class="lede">{SITE.tagline}</p>
+
+  <p>
+    You can reach me at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+  </p>
+
+  <section class="section">
+    <h2>Currently</h2>
+    <ul>
+      <li>Building things — this page is a placeholder, swap it out.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Elsewhere</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/Yalt8826" rel="me noopener">GitHub</a>
+      </li>
+    </ul>
+  </section>
+</Base>

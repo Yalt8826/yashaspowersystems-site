@@ -1,0 +1,162 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site.config';
+
+/*
+ * NOTE: this is a good-faith, factually-accurate template describing what
+ * this site actually does. It is not legal advice. If you add analytics,
+ * cookies, embedded third-party content, a contact form, or payments,
+ * update this page — those all change what you must disclose.
+ */
+
+const host = new URL(SITE.domain).host;
+---
+
+<Base
+  title="Privacy Policy"
+  description={`How ${SITE.name} handles information when you visit ${host}.`}
+>
+  <article class="prose">
+    <h1>Privacy Policy</h1>
+    <p class="muted small">Last updated: {SITE.privacyUpdated}</p>
+
+    <p>
+      This policy explains what information is collected when you visit
+      <strong>{host}</strong> (the &ldquo;Site&rdquo;), why it is collected, and what
+      you can do about it.
+    </p>
+
+    <h2>1. Who is responsible</h2>
+    <p>
+      The Site is operated by {SITE.legalEntity}, based in {SITE.country}
+      (&ldquo;I&rdquo;, &ldquo;me&rdquo;). For the purposes of applicable data protection
+      law, {SITE.legalEntity} is the controller of any personal data described below.
+    </p>
+    <p>
+      Questions or requests: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    </p>
+
+    <h2>2. What is collected</h2>
+    <p>
+      The Site is a set of static pages. It does not use cookies, does not run
+      analytics, and does not include advertising or third-party tracking scripts.
+    </p>
+
+    <h3>2.1 Server logs</h3>
+    <p>
+      Like virtually all websites, the Site is served through a content delivery
+      network, which records basic technical information for each request. This
+      typically includes:
+    </p>
+    <ul>
+      <li>your IP address;</li>
+      <li>the date and time of your request;</li>
+      <li>the page or file requested;</li>
+      <li>your browser type and operating system (user agent);</li>
+      <li>the page that referred you, if any.</li>
+    </ul>
+    <p>
+      These records are generated automatically as a technical necessity of serving
+      web pages. They are not used to build a profile of you, and they are not
+      combined with information from any other source.
+    </p>
+
+    <h3>2.2 What you send me directly</h3>
+    <p>
+      If you email me, I receive your email address and whatever you choose to
+      include in your message. I use it only to reply to you.
+    </p>
+
+    <h3>2.3 What is not collected</h3>
+    <ul>
+      <li>No cookies or local storage are set for tracking purposes.</li>
+      <li>No analytics, advertising, or fingerprinting services are used.</li>
+      <li>No account registration, and no payment or financial data.</li>
+      <li>No location data, and no access to your device beyond the request above.</li>
+    </ul>
+
+    <h2>3. Why it is processed</h2>
+    <p>
+      Server logs are processed on the basis of legitimate interests: operating the
+      Site securely, keeping it available, and defending against abuse such as
+      denial-of-service attacks. Information you email to me is processed in order
+      to respond to you, and on the basis of your consent in contacting me.
+    </p>
+
+    <h2>4. Who it is shared with</h2>
+    <p>
+      I do not sell, rent, or trade personal data. Information is shared only with
+      the infrastructure provider that hosts and delivers the Site:
+    </p>
+    <ul>
+      <li>
+        <strong>Cloudflare, Inc.</strong> &mdash; provides hosting, DNS, TLS
+        certificates, and content delivery for the Site, and therefore processes
+        request data on my behalf as a processor. Cloudflare&rsquo;s own handling of
+        this data is described in its
+        <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">privacy policy</a>.
+      </li>
+    </ul>
+    <p>
+      Data may also be disclosed where I am legally required to do so.
+    </p>
+
+    <h2>5. How long it is kept</h2>
+    <p>
+      Server logs at the delivery network are retained for a short period for
+      security and operational purposes and are then discarded. Emails you send me
+      are kept for as long as needed to handle your enquiry, and are deleted when no
+      longer required. Nothing here is retained indefinitely for marketing purposes,
+      because there is no marketing.
+    </p>
+
+    <h2>6. International transfers</h2>
+    <p>
+      The Site is delivered through a global network, so a request from your device
+      may be handled by a data centre located outside {SITE.country}. Cloudflare
+      maintains contractual safeguards for such transfers as described in its own
+      privacy documentation.
+    </p>
+
+    <h2>7. Your rights</h2>
+    <p>
+      Depending on where you live, you may have the right to: access the personal
+      data held about you; have it corrected; have it erased; object to or restrict
+      its processing; receive it in a portable format; and lodge a complaint with
+      your local data protection authority.
+    </p>
+    <p>
+      Because this Site collects almost nothing, in most cases there will be no
+      stored personal data to act on &mdash; but you are welcome to ask. Write to
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a> and I will respond within a
+      reasonable period.
+    </p>
+
+    <h2>8. Children</h2>
+    <p>
+      The Site is not directed at children and does not knowingly collect personal
+      data from them.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      The Site is served exclusively over HTTPS. Traffic is encrypted in transit.
+      No method of transmission or storage is completely secure, but the amount of
+      personal data involved here is deliberately minimal.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      If this policy changes, the &ldquo;last updated&rdquo; date at the top of this
+      page will change with it. Continued use of the Site after an update means you
+      accept the revised policy.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      {SITE.legalEntity}<br />
+      {SITE.country}<br />
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+    </p>
+  </article>
+</Base>
