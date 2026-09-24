@@ -33,6 +33,8 @@ all follow. Currently set:
 | `domain` | `https://yashaspowersystems.com` |
 | `tagline` | `UPS systems, sales and service.` — **inferred, please confirm** |
 | `email` | `ypsapcups@gmail.com` |
+| `phone` | **EMPTY** — privacy policy omits the line until set |
+| `address` | **EMPTY** — privacy policy omits the line until set |
 | `legalEntity` | `Yashas Power Systems` — update if the registered name differs |
 | `country` | `India` |
 | `privacyUpdated` | `2026-09-24` |
@@ -41,10 +43,25 @@ Also replace the **placeholder body copy** in `src/pages/index.astro` (the
 "What we do" and "Get in touch" sections). Those services were inferred from the
 business name and are **not confirmed claims** — do not publish them as-is.
 
-> The privacy policy is a good-faith, factually-accurate description of what this site
-> actually does. **It is not legal advice.** If you later add analytics, cookies,
-> embedded third-party content, a contact form, a WhatsApp widget or payments, update
-> that page — those all change what you must disclose.
+> The privacy policy text was supplied by the business on 2026-09-24 and ported
+> verbatim into `src/pages/privacy.astro`. **It is not legal advice.**
+>
+> ### ⚠️ Two claims in that text do not describe this website
+>
+> Both are hedged with "may", so neither is strictly false — but a policy that
+> overstates what is collected is still inaccurate, and these are easy to fix:
+>
+> | Section | Claim | Reality |
+> | --- | --- | --- |
+> | §11 Cookies and Website Technologies | the website "may use cookies or similar technologies" for functionality, security, **authentication**, preferences, analytics | this site sets **no cookies**, has no authentication, no preferences storage. There is nothing for a visitor to control in browser settings |
+> | §10 Third-Party Services | lists **Analytics** among services in use | no analytics service is loaded anywhere in this repo |
+>
+> Either soften those two passages (e.g. "does not currently use cookies") or
+> delete the claims. Sections 1–9 and 12–14 accurately describe the business and
+> should stay as written.
+>
+> Everything else in the policy describes real business data handling — ServGrid,
+> WhatsApp, technician records — and is unaffected by this site being static.
 
 ---
 

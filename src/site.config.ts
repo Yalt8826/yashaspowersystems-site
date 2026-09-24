@@ -21,6 +21,18 @@ export const SITE = {
   email: 'ypsapcups@gmail.com',
 
   /**
+   * Public contact phone. ⚠️ EMPTY — the privacy policy omits the line entirely
+   * while this is blank. Fill it before publishing.
+   */
+  phone: '',
+
+  /**
+   * Public business address. ⚠️ EMPTY — the privacy policy omits the line
+   * entirely while this is blank. Fill it before publishing.
+   */
+  address: '',
+
+  /**
    * Who is legally responsible for the site (privacy policy "data controller").
    * Update if the registered legal name differs from the trading name.
    */
