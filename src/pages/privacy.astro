@@ -3,10 +3,10 @@ import Base from '../layouts/Base.astro';
 import { SITE } from '../site.config';
 
 /*
- * NOTE: this is a good-faith, factually-accurate template describing what
- * this site actually does. It is not legal advice. If you add analytics,
- * cookies, embedded third-party content, a contact form, or payments,
- * update this page — those all change what you must disclose.
+ * NOTE: this is a good-faith, factually-accurate description of what this site
+ * actually does. It is not legal advice. If you add analytics, cookies, embedded
+ * third-party content, a contact form, a WhatsApp widget, or payments, update
+ * this page — every one of those changes what you must disclose.
  */
 
 const host = new URL(SITE.domain).host;
@@ -29,11 +29,13 @@ const host = new URL(SITE.domain).host;
     <h2>1. Who is responsible</h2>
     <p>
       The Site is operated by {SITE.legalEntity}, based in {SITE.country}
-      (&ldquo;I&rdquo;, &ldquo;me&rdquo;). For the purposes of applicable data protection
-      law, {SITE.legalEntity} is the controller of any personal data described below.
+      (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;). For the purposes of
+      applicable data protection law, {SITE.legalEntity} is the controller of any
+      personal data described below.
     </p>
     <p>
-      Questions or requests: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      Questions or requests:
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
     </p>
 
     <h2>2. What is collected</h2>
@@ -61,10 +63,11 @@ const host = new URL(SITE.domain).host;
       combined with information from any other source.
     </p>
 
-    <h3>2.2 What you send me directly</h3>
+    <h3>2.2 What you send us directly</h3>
     <p>
-      If you email me, I receive your email address and whatever you choose to
-      include in your message. I use it only to reply to you.
+      If you email us, we receive your email address and whatever you choose to
+      include in your message. We use it only to respond to your enquiry and to
+      handle any business that follows from it.
     </p>
 
     <h3>2.3 What is not collected</h3>
@@ -79,35 +82,37 @@ const host = new URL(SITE.domain).host;
     <p>
       Server logs are processed on the basis of legitimate interests: operating the
       Site securely, keeping it available, and defending against abuse such as
-      denial-of-service attacks. Information you email to me is processed in order
-      to respond to you, and on the basis of your consent in contacting me.
+      denial-of-service attacks. Information you email to us is processed in order
+      to respond to you and to provide the products or services you have asked
+      about.
     </p>
 
     <h2>4. Who it is shared with</h2>
     <p>
-      I do not sell, rent, or trade personal data. Information is shared only with
+      We do not sell, rent, or trade personal data. Information is shared only with
       the infrastructure provider that hosts and delivers the Site:
     </p>
     <ul>
       <li>
         <strong>Cloudflare, Inc.</strong> &mdash; provides hosting, DNS, TLS
         certificates, and content delivery for the Site, and therefore processes
-        request data on my behalf as a processor. Cloudflare&rsquo;s own handling of
-        this data is described in its
+        request data on our behalf as a processor. Cloudflare&rsquo;s own handling
+        of this data is described in its
         <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">privacy policy</a>.
       </li>
     </ul>
     <p>
-      Data may also be disclosed where I am legally required to do so.
+      Data may also be disclosed where we are legally required to do so.
     </p>
 
     <h2>5. How long it is kept</h2>
     <p>
       Server logs at the delivery network are retained for a short period for
-      security and operational purposes and are then discarded. Emails you send me
-      are kept for as long as needed to handle your enquiry, and are deleted when no
-      longer required. Nothing here is retained indefinitely for marketing purposes,
-      because there is no marketing.
+      security and operational purposes and are then discarded. Emails you send us
+      are kept for as long as needed to handle your enquiry and any resulting
+      business relationship, and are deleted when no longer required. Nothing here
+      is retained indefinitely for marketing purposes, because there is no
+      marketing.
     </p>
 
     <h2>6. International transfers</h2>
@@ -128,7 +133,7 @@ const host = new URL(SITE.domain).host;
     <p>
       Because this Site collects almost nothing, in most cases there will be no
       stored personal data to act on &mdash; but you are welcome to ask. Write to
-      <a href={`mailto:${SITE.email}`}>{SITE.email}</a> and I will respond within a
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a> and we will respond within a
       reasonable period.
     </p>
 
@@ -140,7 +145,7 @@ const host = new URL(SITE.domain).host;
 
     <h2>9. Security</h2>
     <p>
-      The Site is served exclusively over HTTPS. Traffic is encrypted in transit.
+      The Site is served exclusively over HTTPS and traffic is encrypted in transit.
       No method of transmission or storage is completely secure, but the amount of
       personal data involved here is deliberately minimal.
     </p>

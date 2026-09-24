@@ -9,22 +9,35 @@ import { SITE } from '../site.config';
   <p class="lede">{SITE.tagline}</p>
 
   <p>
-    You can reach me at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    For enquiries, email
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
 
+  {/*
+    TODO: everything below is placeholder copy. Replace it with your real
+    services and details, or delete the sections you don't need. None of
+    these are claims you have confirmed.
+  */}
   <section class="section">
-    <h2>Currently</h2>
+    <h2>What we do</h2>
     <ul>
-      <li>Building things — this page is a placeholder, swap it out.</li>
+      <li>Supply and installation of UPS systems</li>
+      <li>Battery replacement and maintenance</li>
+      <li>Service, support and repairs</li>
     </ul>
+    <p class="muted small">
+      Placeholder — replace with your actual services.
+    </p>
   </section>
 
   <section class="section">
-    <h2>Elsewhere</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/Yalt8826" rel="me noopener">GitHub</a>
-      </li>
-    </ul>
+    <h2>Get in touch</h2>
+    <p>
+      <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      <br />
+      <span class="muted small">
+        Add a phone number and address here if you want them public.
+      </span>
+    </p>
   </section>
 </Base>

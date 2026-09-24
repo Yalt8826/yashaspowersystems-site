@@ -6,22 +6,25 @@
  */
 export const SITE = {
   /** Shown in the header, footer, <title> and Open Graph tags. */
-  name: 'Your Name',
+  name: 'Yashas Power Systems',
 
   /** Canonical origin. Must be the real production URL, no trailing slash. */
-  domain: 'https://example.com',
+  domain: 'https://yashaspowersystems.com',
 
-  /** One line under your name on the home page. */
-  tagline: 'Short one-line description of what you do.',
+  /**
+   * ⚠️ PLACEHOLDER — replace with your real one-line description.
+   * This was inferred from the business name; it is NOT a confirmed claim.
+   */
+  tagline: 'UPS systems, sales and service.',
 
   /** Public contact address. Used on home + privacy policy. */
-  email: 'hello@example.com',
+  email: 'ypsapcups@gmail.com',
 
   /**
    * Who is legally responsible for the site (privacy policy "data controller").
-   * For a personal site this is usually just your name.
+   * Update if the registered legal name differs from the trading name.
    */
-  legalEntity: 'Your Name',
+  legalEntity: 'Yashas Power Systems',
 
   /** Governing jurisdiction named in the privacy policy. */
   country: 'India',
