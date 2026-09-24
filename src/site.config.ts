@@ -30,8 +30,11 @@ export const SITE = {
   privacyUpdated: '2026-09-24',
 } as const;
 
-/** Nav links rendered in the header and footer. */
+/** Nav links rendered in the header and footer.
+ *  NOTE: Astro builds pages to directory format (privacy/index.html), so the
+ *  canonical URL carries a trailing slash. Linking to "/privacy" would cost an
+ *  extra 301 redirect on Cloudflare Pages — keep the slashes. */
 export const NAV = [
   { href: '/', label: 'Home' },
-  { href: '/privacy', label: 'Privacy' },
+  { href: '/privacy/', label: 'Privacy' },
 ] as const;
